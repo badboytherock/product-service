@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class ConfigClientApplication {
 
-	@Value("${spring.messages.HELLO_MESSAGE: Default hello}")
+	@Value("${HELLO_MESSAGE: Default hello}")
 	private String message;
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigClientApplication.class, args);
